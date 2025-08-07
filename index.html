@@ -1,13 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Simple Blog</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <h1>Welcome to My Page</h1>
-  <p>This is a simple HTML document.</p>
+
+    <header>
+        <div class="logo">
+            <h1>Simple Blog</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <main class="main-content">
+            <article class="blog-post">
+                <img src="https://picsum.photos/seed/html/800/400" alt="Abstract code on a screen">
+                <h2>An Introduction to HTML5</h2>
+                <p>HTML5 is the latest evolution of the standard that defines HTML. It comes with new elements, attributes, and behaviors, and a larger set of technologies that allows the building of more diverse and powerful Web sites and applications.</p>
+                <a href="#" class="read-more-btn">Read More</a>
+            </article>
+
+            <article class="blog-post">
+                <img src="https://picsum.photos/seed/css/800/400" alt="Colorful paint strokes">
+                <h2>Styling with Modern CSS</h2>
+                <p>CSS (Cascading Style Sheets) is used to style and lay out web pages. With modern features like Flexbox and Grid, creating complex, responsive layouts has never been easier. Let's explore some powerful techniques.</p>
+                <a href="#" class="read-more-btn">Read More</a>
+            </article>
+
+            <article class="blog-post">
+                <img src="https://picsum.photos/seed/webdev/800/400" alt="A laptop on a desk">
+                <h2>The Art of Web Design</h2>
+                <p>Web design encompasses many different skills and disciplines in the production and maintenance of websites. The different areas of web design include web graphic design, user interface design, and user experience design.</p>
+                <a href="#" class="read-more-btn">Read More</a>
+            </article>
+        </main>
+
+        <aside class="sidebar">
+            <div class="widget">
+                <h3>Search</h3>
+                <input type="text" placeholder="Search...">
+            </div>
+
+            <div class="widget">
+                <h3>About The Author</h3>
+                <img src="images/IMG_7940.JPG" alt="Author's profile picture" class="author-img">
+                <p>Hi, I'm Shantnu! A passionate web developer dedicated to creating beautiful and functional websites.</p>
+            </div>
+            
+            <div class="widget">
+                <h3>Categories</h3>
+                <ul>
+                    <li><a href="#">Web Development</a></li>
+                    <li><a href="#">CSS Tutorials</a></li>
+                    <li><a href="#">HTML Basics</a></li>
+                    <li><a href="#">Design Principles</a></li>
+                </ul>
+            </div>
+
+            <div class="widget">
+                <h3>Recent Posts</h3>
+                <ul>
+                    <li><a href="#">An Introduction to HTML5</a></li>
+                    <li><a href="#">Styling with Modern CSS</a></li>
+                    <li><a href="#">The Art of Web Design</a></li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+
+    <footer>
+        <div class="social-media">
+            <a href="#">Twitter</a> |
+            <a href="https://www.linkedin.com/in/shantnu-gabhale-3b1981269">LinkedIn</a> |
+            <a href="https://github.com/shantnugabhale">GitHub</a>
+        </div>
+        <p>Copyright &copy; 2025 Simple Blog. All Rights Reserved.</p>
+    </footer>
+
 </body>
 </html>
